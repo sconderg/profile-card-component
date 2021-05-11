@@ -1,0 +1,88 @@
+// Varaibles
+$d-cayan: hsl(185, 75%, 39%);
+$v-d-blue: hsl(229, 23%, 23%);
+$d-g-blue: hsl(227, 10%, 46%);
+$d-gray: hsl(0, 0%, 59%);
+
+/* global rules */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url(../img/bg-pattern-top.svg),
+    url(../img/bg-pattern-bottom.svg) no-repeat;
+  background-position: left;
+  background-color: $d-cayan;
+  height: 100vh;
+}
+/* end global rules */
+
+/* Start Card Component */
+.card {
+  width: 25%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow-x: hidden;
+  .head {
+    background: url(../img/bg-pattern-card.svg);
+    display: flex;
+    justify-content: center;
+    img {
+      position: relative;
+      border-radius: 50%;
+      top: 50px;
+      border: 10px solid #fff;
+    }
+  }
+  .info {
+    padding-top: 55px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin: 0;
+      font-size: 1em;
+      span {
+        font-weight: 300;
+        color: $d-gray;
+      }
+    }
+    p {
+      color: $d-gray;
+    }
+  }
+  .anyl {
+    border-top: 1px solid $d-gray;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      color: $d-gray;
+      margin-top: 5px;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 75%;
+  }
+  @media (max-width: 320px) {
+    width: 90%;
+  }
+}
+/* End Card Component */

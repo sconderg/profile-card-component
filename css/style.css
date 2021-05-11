@@ -1,0 +1,120 @@
+/* global rules */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  background: url(../img/bg-pattern-top.svg), url(../img/bg-pattern-bottom.svg) no-repeat;
+  background-position: left;
+  background-color: #19a2ae;
+  height: 100vh;
+}
+
+/* end global rules */
+/* Start Card Component */
+.card {
+  width: 25%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow-x: hidden;
+}
+
+.card .head {
+  background: url(../img/bg-pattern-card.svg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .head img {
+  position: relative;
+  border-radius: 50%;
+  top: 50px;
+  border: 10px solid #fff;
+}
+
+.card .info {
+  padding-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .info h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.card .info h1 span {
+  font-weight: 300;
+  color: #969696;
+}
+
+.card .info p {
+  color: #969696;
+}
+
+.card .anyl {
+  border-top: 1px solid #969696;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .anyl h3 {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card .anyl p {
+  color: #969696;
+  margin-top: 5px;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 75%;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    width: 90%;
+  }
+}
+
+/* End Card Component */
+/*# sourceMappingURL=style.css.map */
